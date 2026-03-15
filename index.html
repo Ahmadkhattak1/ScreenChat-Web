@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScreenChat | Ask AI Without Switching Tabs</title>
+    <meta
+        name="description"
+        content="Ask AI without switching tabs. Hit Ctrl+Shift+Y and ScreenChat opens on the page you're already on."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-shell">
+        <header class="hero" id="top">
+            <div class="hero__mesh"></div>
+            <div class="hero__glow hero__glow--left"></div>
+            <div class="hero__glow hero__glow--right"></div>
+            <div class="container">
+                <nav class="nav">
+                    <a class="brand" href="#top" aria-label="ScreenChat home">
+                        <img class="brand__icon" src="assets/screenshot-icon.png" alt="" width="42" height="42">
+                        <span class="brand__text">
+                            <strong>ScreenChat</strong>
+                            <span>AI for your browser</span>
+                        </span>
+                    </a>
+                    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+                        Menu
+                    </button>
+                    <div class="nav__links" id="nav-links">
+                        <a href="#flow">Flow</a>
+                        <a href="#screens">Screens</a>
+                        <a class="button button--nav" href="#">Add to Chrome</a>
+                    </div>
+                </nav>
+
+                <section class="hero__content">
+                    <div class="hero-copy">
+                        <h1>
+                            <span>Ask AI</span>
+                            <span>without switching</span>
+                            <span>tabs.</span>
+                        </h1>
+                        <p>Hit Ctrl+Shift+Y and ScreenChat opens right where you are.</p>
+                        <div class="hero-copy__actions">
+                            <a class="button button--primary" href="#">Add to Chrome</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="hero-shortcut-stage">
+                            <div class="hero-shortcut-stage__plate">
+                                <span class="hero-key hero-key--ctrl">Ctrl</span>
+                                <span class="hero-key hero-key--shift">Shift</span>
+                                <span class="hero-key hero-key--y">Y</span>
+                            </div>
+                            <div class="hero-shortcut-popup">
+                                <div class="hero-shortcut-popup__top">
+                                    <span class="hero-shortcut-popup__badge"></span>
+                                    <span class="hero-shortcut-popup__title"></span>
+                                </div>
+                                <div class="hero-shortcut-popup__bubble hero-shortcut-popup__bubble--question">
+                                    <div class="hero-shortcut-popup__line hero-shortcut-popup__line--long"></div>
+                                    <div class="hero-shortcut-popup__line hero-shortcut-popup__line--short"></div>
+                                </div>
+                                <div class="hero-shortcut-popup__bubble hero-shortcut-popup__bubble--answer">
+                                    <div class="hero-shortcut-popup__line hero-shortcut-popup__line--medium"></div>
+                                    <div class="hero-shortcut-popup__line hero-shortcut-popup__line--shorter"></div>
+                                </div>
+                                <div class="hero-shortcut-popup__composer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+        <main>
+            <section class="section section--base" id="flow">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2>Get unstuck in three moves.</h2>
+                    </div>
+                    <div class="story-grid">
+                        <article class="story-card story-card--purple">
+                            <div class="story-card__visual story-card__visual--shortcut" aria-label="Keyboard shortcut">
+                                <div class="story-shortcut">
+                                    <kbd>Ctrl</kbd>
+                                    <span class="story-shortcut__plus" aria-hidden="true">+</span>
+                                    <kbd>Shift</kbd>
+                                    <span class="story-shortcut__plus" aria-hidden="true">+</span>
+                                    <kbd>Y</kbd>
+                                </div>
+                            </div>
+                            <h3>Hit the shortcut.</h3>
+                            <p>ScreenChat opens instantly.</p>
+                        </article>
+                        <article class="story-card story-card--mint">
+                            <div class="story-card__visual story-card__visual--panel">
+                                <section class="sc-panel sc-panel--story" aria-label="ScreenChat prompt panel" inert>
+                                    <div class="sc-header sc-header--story">
+                                        <div class="sc-header-top">
+                                            <div class="sc-header-left">
+                                                <img src="assets/screenchat-extension-icon.png" class="sc-logo" alt="" aria-hidden="true">
+                                                <span class="sc-header-skeleton" aria-hidden="true"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sc-pane sc-pane-chat visible">
+                                        <div class="sc-messages is-empty">
+                                            <div class="sc-message ai">
+                                                <div class="sc-bubble">How can I help with this page?</div>
+                                            </div>
+                                        </div>
+                                        <div class="sc-quick-prompts">
+                                            <button class="sc-prompt-btn" type="button">
+                                                <span class="sc-prompt-main">
+                                                    <span class="sc-prompt-title">Key takeaways</span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="sc-input-area">
+                                            <div class="sc-input-row">
+                                                <div class="sc-input-wrapper">
+                                                    <textarea class="sc-textarea" rows="1" readonly aria-label="Ask ScreenChat">Can you summarize this section?</textarea>
+                                                </div>
+                                                <button class="sc-send-btn" type="button" aria-label="Send">
+                                                    <img src="assets/send.svg" class="sc-send-icon" alt="" aria-hidden="true">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <h3>Ask in place.</h3>
+                            <p>No new tab. No setup.</p>
+                        </article>
+                        <article class="story-card story-card--gold">
+                            <div class="story-card__visual story-card__visual--panel">
+                                <section class="sc-panel sc-panel--story" aria-label="ScreenChat answer panel" inert>
+                                    <div class="sc-header sc-header--story">
+                                        <div class="sc-header-top">
+                                            <div class="sc-header-left">
+                                                <img src="assets/screenchat-extension-icon.png" class="sc-logo" alt="" aria-hidden="true">
+                                                <span class="sc-header-skeleton" aria-hidden="true"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sc-pane sc-pane-chat visible">
+                                        <div class="sc-messages">
+                                            <div class="sc-message user">
+                                                <div class="sc-bubble">Can you summarize this section?</div>
+                                            </div>
+                                            <div class="sc-message ai">
+                                                <div class="sc-bubble">It outlines the main point and the next thing to notice...</div>
+                                            </div>
+                                        </div>
+                                        <div class="sc-input-area">
+                                            <div class="sc-input-row">
+                                                <div class="sc-input-wrapper">
+                                                    <textarea class="sc-textarea" rows="1" readonly placeholder="Ask about this page..." aria-label="Ask ScreenChat"></textarea>
+                                                </div>
+                                                <button class="sc-send-btn" type="button" aria-label="Send">
+                                                    <img src="assets/send.svg" class="sc-send-icon" alt="" aria-hidden="true">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <h3>See the answer.</h3>
+                            <p>The reply shows up on the same page.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--rose section--use-case">
+                <div class="container">
+                    <div class="section-heading section-heading--use-case">
+                        <h2>Turn a blank email into a first draft.</h2>
+                        <p>Need to follow up fast? Ask ScreenChat for a clean draft while the compose window is still open.</p>
+                    </div>
+                    <div class="email-demo" aria-label="Email compose window with ScreenChat drafting an email">
+                        <div class="email-demo__window">
+                            <div class="email-demo__bar" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="email-demo__sheet">
+                                <div class="email-demo__title">New message</div>
+                                <div class="email-demo__fields">
+                                    <div class="email-demo__row">
+                                        <span class="email-demo__label">To</span>
+                                        <span class="email-demo__value">Maya Patel</span>
+                                    </div>
+                                    <div class="email-demo__row">
+                                        <span class="email-demo__label">Subject</span>
+                                        <span class="email-demo__value">Follow-up from today's design review</span>
+                                    </div>
+                                </div>
+                                <div class="email-demo__body" aria-hidden="true">
+                                    <span class="email-demo__line email-demo__line--greeting"></span>
+                                    <span class="email-demo__line email-demo__line--short"></span>
+                                    <span class="email-demo__line"></span>
+                                    <span class="email-demo__line email-demo__line--medium"></span>
+                                    <span class="email-demo__line email-demo__line--short"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="sc-panel sc-panel--email" aria-label="ScreenChat drafting an email" inert>
+                            <div class="sc-header sc-header--story">
+                                <div class="sc-header-top">
+                                    <div class="sc-header-left">
+                                        <img src="assets/screenchat-extension-icon.png" class="sc-logo" alt="" aria-hidden="true">
+                                        <span class="sc-header-skeleton" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sc-pane sc-pane-chat visible">
+                                <div class="sc-messages">
+                                    <div class="sc-message user">
+                                        <div class="sc-bubble">Can you draft a short follow-up email to Maya after today's design review?</div>
+                                    </div>
+                                    <div class="sc-message ai">
+                                        <div class="sc-bubble sc-bubble--draft">Subject: Follow-up from today's design review
+
+Hi Maya, thanks again for the review today. I wanted to share the next steps we aligned on and confirm the updated timeline for the revised screens.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--rose section--screens-proof" id="screens">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2>Ask and answer on the page.</h2>
+                    </div>
+                    <div class="showcase-grid showcase-grid--cupertino">
+                        <article class="screen-card screen-card--cupertino screen-card--ask">
+                            <div class="screen-card__copy">
+                                <h3>Ask on the page.</h3>
+                                <p>Type without leaving the page.</p>
+                            </div>
+                            <div class="screen-card__frame">
+                                <img
+                                    class="screen-card__image"
+                                    src="assets/screenchat-product-panel.png"
+                                    alt="ScreenChat open on a live page with a question typed into the input."
+                                    width="1920"
+                                    height="1440"
+                                >
+                            </div>
+                        </article>
+
+                        <article class="screen-card screen-card--cupertino screen-card--answer">
+                            <div class="screen-card__copy">
+                                <h3>Keep the answer in view.</h3>
+                                <p>The reply stays beside your work.</p>
+                            </div>
+                            <div class="screen-card__frame">
+                                <img
+                                    class="screen-card__image"
+                                    src="assets/screenchat-product-hero.png"
+                                    alt="ScreenChat answering beside a live page."
+                                    width="1920"
+                                    height="1440"
+                                >
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta" id="cta">
+                <div class="container">
+                    <div class="cta-panel">
+                        <img class="cta-panel__icon" src="assets/screenshot-icon.png" alt="" width="72" height="72">
+                        <h2>Get AI on the page itself.</h2>
+                        <div class="cta-panel__actions">
+                            <a class="button button--dark" href="#">Add to Chrome</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__inner">
+                <a class="brand brand--footer" href="#top">
+                    <img class="brand__icon" src="assets/screenshot-icon.png" alt="" width="34" height="34">
+                    <span class="brand__text">
+                        <strong>ScreenChat</strong>
+                        <span>AI on demand for your browser</span>
+                    </span>
+                </a>
+                <div class="footer__links">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/data-deletion">Data Deletion</a>
+                    <a href="mailto:ahdfactz@gmail.com">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
