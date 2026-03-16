@@ -32,6 +32,10 @@
     --sc-radius-bubble: 14px;
     --sc-radius-bubble-tail: 8px;
     --sc-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --scrollbar-track: rgba(23, 20, 31, 0.11);
+    --scrollbar-thumb: #6f51ee;
+    --scrollbar-thumb-hover: #5d37f1;
+    --scrollbar-thumb-active: #4a25dc;
 }
 
 *,
@@ -42,6 +46,9 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 body {
@@ -49,6 +56,30 @@ body {
     font-family: "Manrope", "Segoe UI", sans-serif;
     color: var(--ink-900);
     background: var(--cream-100);
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--scrollbar-thumb) 0%, var(--purple-700) 100%);
+    border-radius: 999px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--scrollbar-thumb-hover) 0%, var(--purple-700) 100%);
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(180deg, var(--scrollbar-thumb-active) 0%, #3f20be 100%);
 }
 
 img {
